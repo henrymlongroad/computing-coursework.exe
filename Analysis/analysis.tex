@@ -1,0 +1,145 @@
+\chapter{Analysis}
+
+\section{Introduction}
+
+\subsection{Client Identification}
+my client is Susannah Mason, she is 50 years old and has very little usage of computers, except when having to order new stock for the pharmacy. currently the pharmacy uses computerised methods to submit orders to the warehouse.
+
+Suesannah is a pharmacutical manager at spire healthcare in impington 
+
+by  creating this program it would speed up the process making leeping track of and ordering of new equipment and stock alot easier for her 
+\subsection{Define the current system}
+ the current system uses mostly computer based order submission and price checks but the orders have to be put through the computer manually 
+\subsection{Describe the problems}
+the orders for the stock take too long to submit and all stock has to be conted by hand 
+\subsection{Section appendix}
+
+\section{Investigation}
+
+\subsection{The current system}
+the current system at the pharmacy is a data base that holds the information of over 36000 items(change when get home) the data base holds the price the mass the desription and how much is in the pharmacy at that point in time
+\subsubsection{Data sources and destinations}
+
+\subsubsection{Algorithms}
+
+i will be using quite a few algorithums for this assignment
+
+IF item = lowest minimum amount THEN
+		order more item
+
+ELSE
+		check next item
+
+END IF
+
+this other algorithm will be used to calculate the exact price of all of the order 
+
+if order submitted = True THEN
+		calculate order
+
+ELSE 
+		restart program
+
+END IF
+
+using the information in the list Items the exact price is calulated
+
+IF item in Items
+		add price item
+
+ELSE
+		add price 0
+
+END IF
+
+\subsubsection{Data flow diagram}
+
+\subsubsection{Input Forms, Output Forms, Report Formats}
+
+\subsection{The proposed system}
+the proposed system will be used to order, check stock and be informed as soon as anything leaves the pharmacy the data base will be updated of the removal, as well as if the product falls below a certain point it will be program to replace the stock by ordering new stock form the wearhouse automatically but the order will go through a master contol point before being sent off 
+\subsubsection{Data sources and destinations}
+
+\subsubsection{Data flow diagram}
+
+\subsubsection{Data dictionary}
+
+\subsubsection{Volumetrics}
+
+\section{Objectives}
+
+\subsection{General Objectives}
+\begin{itemize}
+	\item to make a stable system that checks, updates, restocks and sends payment for the ordered items
+	\item to give the system to auto restock items when they fall below a certain number of items
+	\item to graph which items are being bought or used faster and updates the resocking system acordingly 
+\end{itemize}
+\subsection{Specific Objectives}
+\begin{itemize}
+	\item to design a program that will make sorting through the items at the pharmacy as well as store the price and item location in the pharmacy as well as the amount.
+\item 
+\item 
+
+\end{itemize}
+\subsection{Core Objectives}
+
+\subsection{Other Objectives}
+
+\section{ER Diagrams and Descriptions}
+
+\subsection{ER Diagram}
+
+\subsection{Entity Descriptions}
+\begin{itemize}
+
+\item Client(\underline{clientID}, PharmacyNum,)
+
+\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum}, surname, firstname, PhoneNumber, address,email)
+
+\item Pharmacy(\underline{PharmacyNum})
+
+\item Warehouse(\underline{WareHouseNum}, )
+
+\item Order(\underline{OrderNum}, \emph{WareHouseNum}, OrderDate,)
+\end{itemize}
+\section{Object Analysis}
+
+\subsection{Object Listing}
+\begin{itemize}
+
+\item Client
+\item Pharmacist
+\item Pharmacy
+\item Warehouse
+\item Order
+
+\end{itemize}
+\subsection{Relationship diagrams}
+
+\subsection{Class definitions}
+
+\section{Other Abstractions and Graphs}
+
+\section{Constraints}
+
+\subsection{Hardware}
+
+\subsection{Software}
+
+\subsection{Time}
+
+\subsection{User Knowledge}
+
+\subsection{Access restrictions}
+
+\section{Limitations}
+
+\subsection{Areas which will not be included in computerisation}
+
+\subsection{Areas considered for future computerisation}
+
+\section{Solutions}
+
+\subsection{Alternative solutions}
+
+\subsection{Justification of chosen solution}
