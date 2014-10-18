@@ -59,7 +59,19 @@ END IF
 \subsection{The proposed system}
 the proposed system will be used to order, check stock and be informed as soon as anything leaves the pharmacy the data base will be updated of the removal, as well as if the product falls below a certain point it will be program to replace the stock by ordering new stock form the wearhouse automatically but the order will go through a master contol point before being sent off 
 \subsubsection{Data sources and destinations}
-
+\begin{table}
+\centering
+\begin{tabular}{c c c c}
+\hline\hline
+data Source & travels via & destination
+\hline
+stock information & request for stock information & pharmacy computer
+stock price & request stock price & pharmacy computer
+show stock info & display info & pharmacist
+\hline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
 \subsubsection{Data flow diagram}
 
 \subsubsection{Data dictionary}
