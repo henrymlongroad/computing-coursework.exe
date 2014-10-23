@@ -127,14 +127,18 @@ Data & Uses & Name \\
 \section{ER Diagrams and Descriptions}
 
 \subsection{ER Diagram}
-
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{table_1.jpg}
+\caption{A simple caption \label{overflow}}
+\end{figure}
 \subsection{Entity Descriptions}
 \begin{itemize}
-\item Client(\underline{clientID}, PharmacyNum, surname, FirstName)
-\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum}, Surname, FirstName, PhoneNumber, Address, Email)
-\item Pharmacy(\underline{PharmacyNum}, PharmacyLocation,)
-\item Warehouse(\underline{WareHouseNum},\emph{PharmacyLocation}, )
-\item Order(\underline{OrderNum}, \emph{WareHouseNum},\emph{PharmacyLocation}, OrderDate,)
+\item Client(\underline{clientID}, PharmacyNum, surname, FirstName, PhoneNumber, Address,Postcode)
+\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum},Surname,FirstName,PhoneNumber,Address,Email)
+\item Pharmacy(\underline{PharmacyNum},PharmacyAddress,PharmacyPhoneNumber)
+\item Warehouse(\underline{WareHouseNum},\emph{PharmacyAddress},WareHouseAddress)
+\item Order(\underline{OrderNum},\emph{WareHouseNum},\emph{PharmacyLocation},OrderDate,size)
 \end{itemize}
 \section{Object Analysis}
 
