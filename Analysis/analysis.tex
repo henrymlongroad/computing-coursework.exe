@@ -13,14 +13,13 @@ by  creating this program it would speed up the process making leeping track of 
 \subsection{Describe the problems}
 the orders for the stock take too long to submit and all stock has to be conted by hand 
 \subsection{Section appendix}
-he
+
 \section{Investigation}
 
 \subsection{The current system}
 the current system at the pharmacy is a data base that holds the information of over 500 items. the data base holds the price the mass the desription and how much is in the pharmacy at that point in time. when an item is taken out of stock the pharmacist has a card to say that an item has been removed from the storage cupboard. sometimes the system deosn't update even when the card is swiped to say a product has been removed
 \subsubsection{Data sources and destinations}
 \begin{table}[t]
-
 \begin{tabular}{|c|c|c|}
 \hline
 Data Source & Travels via & destination\\
@@ -29,12 +28,17 @@ doctor & gives prescription & patient\\
 \hline
 patient & requests medicine & pharmacist\\
 \hline
-
+pharmacist & checks stock & stock system\\
+\hline 
+stock system & gives information & pharmasict\\
+\hline
+pharmacist & collects medication & medicine cupboard\\
+\hline
+pharmacist & gives medicine & patient
 \hline
 \end{tabular}
 \caption{}
 \label{tab:}
-
 \end{table}
 \subsubsection{Algorithms}
 
@@ -47,7 +51,7 @@ ELSE
 		check next item
 
 END IF
-
+\space
 this other algorithm will be used to calculate the exact price of all of the order 
 
 if order submitted = True THEN
@@ -57,7 +61,7 @@ ELSE
 		restart program
 
 END IF
-
+\space
 using the information in the list Items the exact price is calulated
 
 IF item in Items
@@ -126,16 +130,11 @@ Data & Uses & Name \\
 
 \subsection{Entity Descriptions}
 \begin{itemize}
-
-\item Client(\underline{clientID}, PharmacyNum,)
-
-\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum}, surname, firstname, PhoneNumber, address,email)
-
-\item Pharmacy(\underline{PharmacyNum})
-
-\item Warehouse(\underline{WareHouseNum}, )
-
-\item Order(\underline{OrderNum}, \emph{WareHouseNum}, OrderDate,)
+\item Client(\underline{clientID}, PharmacyNum, surname, FirstName)
+\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum}, Surname, FirstName, PhoneNumber, Address, Email)
+\item Pharmacy(\underline{PharmacyNum}, PharmacyLocation,)
+\item Warehouse(\underline{WareHouseNum},\emph{PharmacyLocation}, )
+\item Order(\underline{OrderNum}, \emph{WareHouseNum},\emph{PharmacyLocation}, OrderDate,)
 \end{itemize}
 \section{Object Analysis}
 
