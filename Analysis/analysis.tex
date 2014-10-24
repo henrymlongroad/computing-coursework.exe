@@ -40,22 +40,19 @@ pharmacist & gives medicine & patient\\
 \label{tab:}
 \end{table}
 \subsubsection{Algorithms}
+i will be using quite a few algorithums for this assignment
 \begin{algorithm}[H]
-    \caption{if statement}
-\begin{algorithmic}[1]
-\set{$lowest\ minimum\ amount = 135$}
-\if{$item = lowest\ minimum\ amount$}\send{$"you\ don't\ need\ any\ more\ tablets"$}\else\send{$"you\ need\ more\ tablets"$}\Endif
+    \caption{more }
+\begin{algorithmic}
+\For{ItemToCheck = 1 to 500}
+	\If{$item[ItemToCheck] = lowest\ minimum\ amount$}
+		\State $need more tablets \gets False$
+	\Else
+		\State $need more tablets \gets True$ 
+	\EndIf
+\EndFor
 \end{algorithmic}
 \end{algorithm}
-i will be using quite a few algorithums for this assignment
-
-IF (item = lowest minimum amount) THEN
-		order more item
-
-ELSE
-		check next item
-
-END IF
 
 this other algorithm will be used to calculate the exact price of all of the order 
 
