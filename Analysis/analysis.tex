@@ -13,7 +13,11 @@ by  creating this program it would speed up the process making leeping track of 
 \subsection{Describe the problems}
 the orders for the stock take too long to submit and all stock has to be conted by hand 
 \subsection{Section appendix}
-
+\begin{figure}[ht!]
+\centering
+\includegraphics[trim = 5mm 30mm 5mm 10mm, clip,width=110mm]{questionaire.JPG}
+\caption{entity relationship diagram \label{overflow}}
+\end{figure}
 \section{Investigation}
 \subsection{The current system}
 the current system at the pharmacy is a data base that holds the information of over 500 items. the data base holds the price the mass the desription and how much is in the pharmacy at that point in time. when an item is taken out of stock the pharmacist has a card to say that an item has been removed from the storage cupboard. sometimes the system deosn't update even when the card is swiped to say a product has been removed
@@ -40,19 +44,22 @@ pharmacist & gives medicine & patient\\
 \label{tab:}
 \end{table}
 \subsubsection{Algorithms}
-i will be using quite a few algorithums for this assignment
 \begin{algorithm}[H]
-    \caption{more }
-\begin{algorithmic}
-\For{ItemToCheck = 1 to 500}
-	\If{$item[ItemToCheck] = lowest\ minimum\ amount$}
-		\State $need more tablets \gets False$
-	\Else
-		\State $need more tablets \gets True$ 
-	\EndIf
-\EndFor
+    \caption{if statement}
+\begin{algorithmic}[1]
+\set{$lowest\ minimum\ amount = 135$}
+\if{$item = lowest\ minimum\ amount$}\send{$"you\ don't\ need\ any\ more\ tablets"$}\else\send{$"you\ need\ more\ tablets"$}\Endif
 \end{algorithmic}
 \end{algorithm}
+i will be using quite a few algorithums for this assignment
+
+IF (item = lowest minimum amount) THEN
+		order more item
+
+ELSE
+		check next item
+
+END IF
 
 this other algorithm will be used to calculate the exact price of all of the order 
 
