@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.3)  24 OCT 2014 17:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.3)  24 OCT 2014 23:43
 entering extended mode
 **C:/Users/Henry/Documents/git/computing-coursework.exe/coursework.tex
 (C:/Users/Henry/Documents/git/computing-coursework.exe/coursework.tex
@@ -637,10 +637,16 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (C:\Users\Henry\Documents\git\computing-coursework.exe\coursework.aux
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Analysis\analysis.aux
 
-LaTeX Warning: Label `table:nonlin' multiply defined.
+LaTeX Warning: Label `overflow' multiply defined.
 
 
 LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `tab:nonlin' multiply defined.
 
 ) (C:\Users\Henry\Documents\git\computing-coursework.exe\Design\design.aux)
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Testing\testing.aux)
@@ -704,7 +710,7 @@ ning (ext4): destination with the same identifier (name{page.1}) has been alrea
 dy used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...ter}{\numberline {2}Design}{13}{chapter.2}
+l.42 ...ter}{\numberline {2}Design}{19}{chapter.2}
                                                    [1
 
 ] [2] [3])
@@ -715,7 +721,7 @@ Chapter 1.
 [5
 
 
-] <questionaire.JPG, id=715, 2457.18pt x 3709.86pt>
+] <questionaire.JPG, id=710, 2457.18pt x 3709.86pt>
 File: questionaire.JPG Graphic file (type jpg)
  <use questionaire.JPG>
 Package pdftex.def Info: questionaire.JPG used on input line 20.
@@ -734,42 +740,158 @@ l.23 \pagebreak{
                 } <C:/Users/Henry/Documents/git/computing-coursework.exe/questi
 onaire.JPG>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 52.
- [7pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
-) has been already used, duplicate ignored
+put line 53.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<dfd.JPG, id=719, 753.5653pt x 452.4403pt>
+File: dfd.JPG Graphic file (type jpg)
+ <use dfd.JPG>
+Package pdftex.def Info: dfd.JPG used on input line 90.
+(pdftex.def)             Requested size: 369.88582pt x 152.24814pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 90--91
+ [][] 
+ []
+
+<dfd3.JPG, id=721, 753.5653pt x 452.4403pt>
+File: dfd3.JPG Graphic file (type jpg)
+ <use dfd3.JPG>
+Package pdftex.def Info: dfd3.JPG used on input line 94.
+(pdftex.def)             Requested size: 369.88582pt x 152.24814pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{table.1.1})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.81 E
-      ND IF]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 136.
+l.97 \subsubsection
+                   {Input Forms, Output Forms, Report Formats}]
 
- ("C:\Program Files\latex\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
- [8]
-<table1.JPG, id=744, 740.7675pt x 462.22687pt>
-File: table1.JPG Graphic file (type jpg)
- <use table1.JPG>
-Package pdftex.def Info: table1.JPG used on input line 159.
-(pdftex.def)             Requested size: 312.9803pt x 195.2977pt.
- [9]
-Overfull \hbox (92.88931pt too wide) in paragraph at lines 166--167
-[]\OT1/cmr/m/n/10 Pharmacist($[]$,\OT1/cmr/m/it/10 PharmacyNum\OT1/cmr/m/n/10 ,
-Surname,FirstName,PhoneNumber,Address,Email) 
+LaTeX Warning: File `hospital pres.JPG' not found on input line 100.
+
+<hospital pres.JPG, id=735, 195.73125pt x 258.9675pt>
+File: hospital pres.JPG Graphic file (type jpg)
+ <use hospital pres.JPG>
+Package pdftex.def Info: hospital pres.JPG used on input line 100.
+(pdftex.def)             Requested size: 293.59613pt x 388.45026pt.
+
+[8 <C:/Users/Henry/Documents/git/computing-coursework.exe/dfd.JPG> <C:/Users/He
+nry/Documents/git/computing-coursework.exe/dfd3.JPG>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <C:/Users/Henry/Documents/git/computing-coursework.exe/hospital pres.JPG>]
+<dfd2.JPG, id=749, 753.5653pt x 452.4403pt>
+File: dfd2.JPG Graphic file (type jpg)
+ <use dfd2.JPG>
+Package pdftex.def Info: dfd2.JPG used on input line 127.
+(pdftex.def)             Requested size: 369.88582pt x 152.24814pt.
+File: dfd3.JPG Graphic file (type jpg)
+ <use dfd3.JPG>
+Package pdftex.def Info: dfd3.JPG used on input line 128.
+(pdftex.def)             Requested size: 369.88582pt x 152.24814pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 127--129
+ [][] 
  []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 127--129
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.202 
-       <C:/Users/Henry/Documents/git/computing-coursework.exe/table1.JPG>]
-[11]) [12pdfTeX warning (ext4): destination with the same identifier (name{tabl
-e.1.2}) has been already used, duplicate ignored
+l.149 \section
+              {Objectives} <C:/Users/Henry/Documents/git/computing-coursework.e
+xe/dfd2.JPG>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
+
+ ("C:\Program Files\latex\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+ [11]
+<table1.JPG, id=766, 740.7675pt x 462.22687pt>
+File: table1.JPG Graphic file (type jpg)
+ <use table1.JPG>
+Package pdftex.def Info: table1.JPG used on input line 175.
+(pdftex.def)             Requested size: 312.9803pt x 195.2977pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.179 \subsection
+                 {Entity Descriptions} <C:/Users/Henry/Documents/git/computing-
+coursework.exe/table1.JPG>]
+Overfull \hbox (92.88931pt too wide) in paragraph at lines 182--183
+[]\OT1/cmr/m/n/10 Pharmacist($[]$,\OT1/cmr/m/it/10 PharmacyNum\OT1/cmr/m/n/10 ,
+Surname,FirstName,PhoneNumber,Address,Email) 
+ []
+
+File: table1.JPG Graphic file (type jpg)
+<use table1.JPG>
+Package pdftex.def Info: table1.JPG used on input line 190.
+(pdftex.def)             Requested size: 312.9803pt x 195.2977pt.
+
+
+LaTeX Warning: File `er diagram.JPG' not found on input line 206.
+
+<er diagram.JPG, id=773, 452.4403pt x 636.12656pt>
+File: er diagram.JPG Graphic file (type jpg)
+ <use er diagram.JPG>
+Package pdftex.def Info: er diagram.JPG used on input line 206.
+(pdftex.def)             Requested size: 312.9803pt x 440.04404pt.
+
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.207 \end{figure}
+                  ]
+Underfull \hbox (badness 10000) in paragraph at lines 210--294
+[][] []
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <C:/Users/Henry/Documents/git/computing-coursework.exe/er diagram.JPG>]
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/10 created pro-gram that
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 340--341
+[]\OT1/cmr/m/n/10 this will take up more
+ []
+
+
+Overfull \hbox (32.43306pt too wide) in paragraph at lines 336--345
+[][]
+ []
+
+) [18pdfTeX warning (ext4): destination with the same identifier (name{table.1.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -777,7 +899,7 @@ l.11 \include{./Analysis/analysis}
                                   ]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Design\design.tex
 Chapter 2.
-[13
+[19
 
 
 
@@ -785,7 +907,7 @@ Chapter 2.
 Overfull \vbox (434.71611pt too high) has occurred while \output is active []
 
 
-[14]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\OT1/cmr/bx/n/10 Purpose of
  []
@@ -819,12 +941,12 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 69--73
 Underfull \vbox (badness 10000) detected at line 73
  []
 
-[15
+[21
 
 ])
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Testing\testing.tex
 Chapter 3.
-[16
+[22
 
 
 
@@ -897,15 +1019,15 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 39--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[17
+[23
 
-] [18]) [19
+] [24]) [25
 
 ]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Maintenance\maintenance.
 tex
 Chapter 4.
-Excluding 'comment' comment. [20
+Excluding 'comment' comment. [26
 
 
 
@@ -913,12 +1035,12 @@ Excluding 'comment' comment. [20
 Overfull \vbox (349.24393pt too high) has occurred while \output is active []
 
 
-[21] Excluding 'comment' comment. [22
+[27] Excluding 'comment' comment. [28
 
 ])
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Manual\manual.tex
 Chapter 5.
-) [23
+) [29
 
 
 
@@ -927,11 +1049,11 @@ Chapter 5.
 Overfull \vbox (248.63841pt too high) has occurred while \output is active []
 
 
-[24]
+[30]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Evaluation\evaluation.te
 x
 Chapter 6.
-) [25
+) [31
 
 
 
@@ -939,7 +1061,7 @@ Chapter 6.
 Overfull \vbox (6.61086pt too high) has occurred while \output is active []
 
 
-[26]
+[32]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
  (C:\Users\Henry\Documents\git\computing-coursework.exe\coursework.aux
@@ -953,7 +1075,7 @@ x))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
 Package rerunfilecheck Info: File `coursework.out' has not changed.
-(rerunfilecheck)             Checksum: AF04DE689420F304039AA052D94A1FF4;9540.
+(rerunfilecheck)             Checksum: 54FD6E4188FE72F8ABA72497A7843B9B;9462.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -961,10 +1083,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  ) 
 Here is how much of TeX's memory you used:
- 10159 strings out of 493921
- 145960 string characters out of 3149287
- 251559 words of memory out of 3000000
- 13082 multiletter control sequences out of 15000+200000
+ 10190 strings out of 493921
+ 146350 string characters out of 3149287
+ 251560 words of memory out of 3000000
+ 13101 multiletter control sequences out of 15000+200000
  10581 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,12n,45p,530b,546s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -977,9 +1099,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/latex/fonts/type1/public/amsfonts
 es/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/latex/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/latex/fonts/type1/public
 /amsfonts/cm/cmti10.pfb>
-Output written on coursework.pdf (27 pages, 7704737 bytes).
+Output written on coursework.pdf (33 pages, 7965236 bytes).
 PDF statistics:
- 909 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 1105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 945 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 1146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
