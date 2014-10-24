@@ -3,7 +3,7 @@
 \section{Introduction}
 
 \subsection{Client Identification}
-My client is Susannah Mason, she is 50 years old and has very little usage of computers, except when having to order new stock for the pharmacy. currently the pharmacy uses computerised methods to submit orders to the warehouse.
+My client is Susannah Mason, she is 50 years old and has little usage of computers, except when having to order new stock for the pharmacy. currently the pharmacy uses computerised methods to submit orders to the warehouse.
 
 Suesannah is a pharmacutical manager at spire healthcare in impington 
 
@@ -12,17 +12,20 @@ by  creating this program it would speed up the process making leeping track of 
  the current system uses mostly computer based order submission and price checks but the orders have to be put through the computer manually 
 \subsection{Describe the problems}
 the orders for the stock take too long to submit and all stock has to be conted by hand 
+\pagebreak{}
 \subsection{Section appendix}
+
 \begin{figure}[ht!]
 \centering
-\includegraphics[trim = 5mm 30mm 5mm 10mm, clip,width=110mm]{questionaire.JPG}
-\caption{entity relationship diagram \label{overflow}}
+\includegraphics[trim = 7mm 300mm 0mm 70mm, clip, width=140mm, scale=2]{questionaire.JPG}
+\caption{questionaire \label{overflow}}
 \end{figure}
+\pagebreak{}
 \section{Investigation}
 \subsection{The current system}
 the current system at the pharmacy is a data base that holds the information of over 500 items. the data base holds the price the mass the desription and how much is in the pharmacy at that point in time. when an item is taken out of stock the pharmacist has a card to say that an item has been removed from the storage cupboard. sometimes the system deosn't update even when the card is swiped to say a product has been removed
 \subsubsection{Data sources and destinations}
-\begin{table}[t]
+\begin{table}[h]
 \begin{tabular}{|c|c|c|}
 \hline
 Data Source & Travels via & destination\\
@@ -44,14 +47,20 @@ pharmacist & gives medicine & patient\\
 \label{tab:}
 \end{table}
 \subsubsection{Algorithms}
-\begin{algorithm}[H]
+i will be using quite a few algorithums for this assignment
+\begin{algorithm}
     \caption{if statement}
 \begin{algorithmic}[1]
-\set{$lowest\ minimum\ amount = 135$}
-\if{$item = lowest\ minimum\ amount$}\send{$"you\ don't\ need\ any\ more\ tablets"$}\else\send{$"you\ need\ more\ tablets"$}\Endif
+\For{$item\ to\ check = 0 to 50$}
+	\If{$item = lowest\ minimum\ amount$}
+		\State{$"you\ don't\ need\ any\ more\ tablets"$}
+	\Else
+		\State{$"you\ need\ more\ tablets"$}
+	\EndIf
+\EndFor
 \end{algorithmic}
 \end{algorithm}
-i will be using quite a few algorithums for this assignment
+
 
 IF (item = lowest minimum amount) THEN
 		order more item
@@ -91,7 +100,7 @@ END IF
 \subsection{The proposed system}
 the proposed system will be used to order, check stock and be informed as soon as anything leaves the pharmacy the data base will be updated of the removal, as well as if the product falls below a certain point it will be program to replace the stock by ordering new stock form the wearhouse automatically but the order will go through a master contol point before being sent off 
 \subsubsection{Data sources and destinations}
-\begin{table}
+\begin{table}[h]
 \begin{tabular}{|c|c|c|}
 \hline\hline
 data Source & travels via & destination\\
@@ -109,7 +118,7 @@ show stock info & display info & pharmacist\\
 \subsubsection{Data flow diagram}
 
 \subsubsection{Data dictionary}
-\begin{table}
+\begin{table}[h]
 \begin{tabular}{|c|c|c|c|}
 \hline
 Data & Uses & Name \\
@@ -193,23 +202,27 @@ the proposed system should only be accessable and privileges to the people in ph
 
 \section{Limitations}
 
+
 \subsection{Areas which will not be included in computerisation}
 
 \subsection{Areas considered for future computerisation}
 
+\pagebreak
 \section{Solutions}
-\subsection{Alternative solutions} 
-\begin{table}
+\subsection{Alternative solutions}
+
+\begin{table}[h]
 \begin{tabular}{|c|c|c|}
 \hline
 solution & advantages & disadvantages\\
 \hline
-problem & solved & hopwfully\\
+created program that checks  & solved & hopwfully\\
 \hline
 \end{tabular}
 \caption{}
 \label{tab:nonlin}
 \end{table}
+
 \subsection{Justification of chosen solution}
 I have chosen to the Python 3.2 desktop application with a GUI and SQL' solution. My reason for using this method is:
 \begin{itemize}

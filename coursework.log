@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.3)  24 OCT 2014 13:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.3)  24 OCT 2014 17:45
 entering extended mode
 **C:/Users/Henry/Documents/git/computing-coursework.exe/coursework.tex
 (C:/Users/Henry/Documents/git/computing-coursework.exe/coursework.tex
@@ -639,6 +639,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
 LaTeX Warning: Label `table:nonlin' multiply defined.
 
+
+LaTeX Warning: Label `overflow' multiply defined.
+
 ) (C:\Users\Henry\Documents\git\computing-coursework.exe\Design\design.aux)
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Testing\testing.aux)
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Maintenance\maintenance.
@@ -701,7 +704,7 @@ ning (ext4): destination with the same identifier (name{page.1}) has been alrea
 dy used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...ter}{\numberline {2}Design}{12}{chapter.2}
+l.43 ...ter}{\numberline {2}Design}{13}{chapter.2}
                                                    [1
 
 ] [2] [3])
@@ -712,54 +715,69 @@ Chapter 1.
 [5
 
 
-]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 45.
- [6pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
+] <questionaire.JPG, id=715, 2457.18pt x 3709.86pt>
+File: questionaire.JPG Graphic file (type jpg)
+ <use questionaire.JPG>
+Package pdftex.def Info: questionaire.JPG used on input line 20.
+(pdftex.def)             Requested size: 4874.51434pt x 5314.20322pt.
+
+Overfull \hbox (53.30054pt too wide) in paragraph at lines 20--21
+ [][] 
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.67 \space u
-             sing the information in the list Items the exact price is calul...
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+l.23 \pagebreak{
+                } <C:/Users/Henry/Documents/git/computing-coursework.exe/questi
+onaire.JPG>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 52.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.81 E
+      ND IF]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 136.
 
  ("C:\Program Files\latex\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
- [7]
-<table1.JPG, id=736, 740.7675pt x 462.22687pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
+ [8]
+<table1.JPG, id=744, 740.7675pt x 462.22687pt>
 File: table1.JPG Graphic file (type jpg)
  <use table1.JPG>
-Package pdftex.def Info: table1.JPG used on input line 143.
+Package pdftex.def Info: table1.JPG used on input line 159.
 (pdftex.def)             Requested size: 312.9803pt x 195.2977pt.
- [8]
-Overfull \hbox (92.88931pt too wide) in paragraph at lines 150--151
+ [9]
+Overfull \hbox (92.88931pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/m/n/10 Pharmacist($[]$,\OT1/cmr/m/it/10 PharmacyNum\OT1/cmr/m/n/10 ,
 Surname,FirstName,PhoneNumber,Address,Email) 
  []
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
-) has been already used, duplicate ignored
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.186 
+l.202 
        <C:/Users/Henry/Documents/git/computing-coursework.exe/table1.JPG>]
-[10pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}
-) has been already used, duplicate ignored
+[11]) [12pdfTeX warning (ext4): destination with the same identifier (name{tabl
+e.1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.209     \item t
-                 he application will be specific for pharmacy which will be ...
-]) [11]
+l.11 \include{./Analysis/analysis}
+                                  ]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Design\design.tex
 Chapter 2.
-[12
+[13
 
 
 
@@ -767,7 +785,7 @@ Chapter 2.
 Overfull \vbox (434.71611pt too high) has occurred while \output is active []
 
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\OT1/cmr/bx/n/10 Purpose of
  []
@@ -801,12 +819,12 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 69--73
 Underfull \vbox (badness 10000) detected at line 73
  []
 
-[14
+[15
 
 ])
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Testing\testing.tex
 Chapter 3.
-[15
+[16
 
 
 
@@ -879,15 +897,15 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 39--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[16
+[17
 
-] [17]) [18
+] [18]) [19
 
 ]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Maintenance\maintenance.
 tex
 Chapter 4.
-Excluding 'comment' comment. [19
+Excluding 'comment' comment. [20
 
 
 
@@ -895,12 +913,12 @@ Excluding 'comment' comment. [19
 Overfull \vbox (349.24393pt too high) has occurred while \output is active []
 
 
-[20] Excluding 'comment' comment. [21
+[21] Excluding 'comment' comment. [22
 
 ])
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Manual\manual.tex
 Chapter 5.
-) [22
+) [23
 
 
 
@@ -909,11 +927,11 @@ Chapter 5.
 Overfull \vbox (248.63841pt too high) has occurred while \output is active []
 
 
-[23]
+[24]
 (C:\Users\Henry\Documents\git\computing-coursework.exe\Evaluation\evaluation.te
 x
 Chapter 6.
-) [24
+) [25
 
 
 
@@ -921,7 +939,7 @@ Chapter 6.
 Overfull \vbox (6.61086pt too high) has occurred while \output is active []
 
 
-[25]
+[26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
  (C:\Users\Henry\Documents\git\computing-coursework.exe\coursework.aux
@@ -943,10 +961,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  ) 
 Here is how much of TeX's memory you used:
- 10152 strings out of 493921
- 145844 string characters out of 3149287
- 251558 words of memory out of 3000000
- 13078 multiletter control sequences out of 15000+200000
+ 10159 strings out of 493921
+ 145960 string characters out of 3149287
+ 251559 words of memory out of 3000000
+ 13082 multiletter control sequences out of 15000+200000
  10581 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,12n,45p,530b,546s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -955,11 +973,13 @@ Here is how much of TeX's memory you used:
 fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/latex/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/latex/fonts/type1/public/amsfonts
 /cm/cmr12.pfb><C:/Program Files/latex/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-<C:/Program Files/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles/latex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on coursework.pdf (26 pages, 285607 bytes).
+<C:/Program Files/latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
+es/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/latex/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/latex/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on coursework.pdf (27 pages, 7704737 bytes).
 PDF statistics:
- 892 PDF objects out of 1000 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 1094 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 1105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
