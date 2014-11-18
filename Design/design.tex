@@ -3,7 +3,24 @@
 \section{Overall System Design}
 
 \subsection{Short description of the main parts of the system}
+my system will consist of 5 main parts, using this information i have given a short description of what the system is meant to do:
+\begin{itemize}
+\item Log in window 
+\begin{itemize}
+\item this will display a login window and the central widget has input boxes for the user to input there user name and password
+\item checks in the pharmacy's database to find if the user is registered to the system and has prority to enter the database.
+\item the system then checks the users name and finds the password registered to that user. if the password entered is not the same the user will be asked to renter the password after the input box has been cleared.
+\end{itemize}
+\item Database display
+\begin{itemize}
+\item once the user has been accepted into the database the stock will come up on screen for the user 
+\item the system will then check the stock to see if the amount of items is up to the minimum level and if the stock isn't to the minimum level then the system begins to request for more stock.
+\item if the system find's an error e.g. missing stock or calculation problem it will give an error report to the user.
+\end{itemize}
+\item stock order form
+\begin{itemize}
 
+\end{itemize}
 \subsection{System flowcharts showing an overview of the complete system}
 
 \section{User Interface Designs}
@@ -29,7 +46,20 @@
 \subsection{Explanation of how data output items are generated}
 
 \subsection{Data Dictionary}
-
+\begin{table}[h]
+\begin{tabular}{|c|c|c|}
+\hline
+Data & Uses & Name \\
+\hline
+stock detail & stock number & stock check\\
+\hline
+prescription information & mediction needed & prescription\\
+\hline
+enough item in stock False & order more item & update stock\\
+\hline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
 \subsection{Identification of appropriate storage media}
 
 \section{Database Design}
@@ -39,9 +69,43 @@
 \subsubsection{ER Diagrams}
 
 \subsubsection{Entity Descriptions}
+\begin{itemize}
+\item Client(\underline{clientID}, PharmacyNum, surname, FirstName, PhoneNumber, Address,Postcode)
+\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum},Surname,FirstName,PhoneNumber,Address,Email)
+\item Pharmacy(\underline{PharmacyNum},PharmacyAddress,PharmacyPhoneNumber)
+\item Warehouse(\underline{WareHouseNum},\emph{PharmacyAddress},WareHouseAddress)
+\item Order(\underline{OrderNum},\emph{WareHouseNum},\emph{PharmacyLocation},OrderDate,size)
+\end{itemize}
+\subsubsection{UNF}
+\begin{table}[|l|]
+\begin{tabular}
+\hline
+\underline{Un-Normalised}
+\hline
+Client\\
+ClientID\\
+PharmacyNum\\
+Surname\\
+Firstline\\
+
+\end{tabular}
+\end{table}
 
 \subsubsection{1NF to 3NF}
-
+\underline{1NF}
+\begin{table}[|l|l|]
+\begin{tabular}
+non-repeating & repeating \\
+\hline
+\textbf{PharmacyAddress}&\textbf{\\
+&\\
+&\\
+&\\
+&\\
+&\\
+&\\
+\end{tabular}
+\end{table}
 \section{Security and Integrity of the System and Data}
 
 \subsection{Security and Integrity of Data}
