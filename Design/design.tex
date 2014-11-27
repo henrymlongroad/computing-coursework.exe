@@ -19,11 +19,15 @@ my system will consist of 5 main parts, using this information i have given a sh
 \end{itemize}
 \item stock order form
 \begin{itemize}
-
+\item if the system find's a product low the system will bring up a order request form which will be sent to the warehouse.
+\item
+\end{itemize}
 \end{itemize}
 \subsection{System flowcharts showing an overview of the complete system}
 
 \section{User Interface Designs}
+
+\section{hardware specification}
 
 \section{Program Structure}
 
@@ -46,8 +50,8 @@ my system will consist of 5 main parts, using this information i have given a sh
 \subsection{Explanation of how data output items are generated}
 
 \subsection{Data Dictionary}
-\begin{table}[h]
-\begin{tabular}{|c|c|c|}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
 \hline
 Data & Uses & Name \\
 \hline
@@ -58,8 +62,8 @@ prescription information & mediction needed & prescription\\
 enough item in stock False & order more item & update stock\\
 \hline
 \end{tabular}
-\label{table:nonlin}
 \end{table}
+
 \subsection{Identification of appropriate storage media}
 
 \section{Database Design}
@@ -70,40 +74,101 @@ enough item in stock False & order more item & update stock\\
 
 \subsubsection{Entity Descriptions}
 \begin{itemize}
-\item Client(\underline{clientID}, PharmacyNum, surname, FirstName, PhoneNumber, Address,Postcode)
-\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum},Surname,FirstName,PhoneNumber,Address,Email)
+\item Client(\underline{clientID},\emph{PharmacyNum}, surname, FirstName, PhoneNumber, Address,Postcode, PrescriptionCode)
 \item Pharmacy(\underline{PharmacyNum},PharmacyAddress,PharmacyPhoneNumber)
+\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum},Surname,
+FirstName,PhoneNumber,Address,Email)
 \item Warehouse(\underline{WareHouseNum},\emph{PharmacyAddress},WareHouseAddress)
-\item Order(\underline{OrderNum},\emph{WareHouseNum},\emph{PharmacyLocation},OrderDate,size)
+\item Order(\underline{OrderNum},\emph{WareHouseNum},\emph{Pharmacyaddress},OrderDate,size)
+\item product(\underline{ProductCode},\emph{OrderNum},QuantityOfMed,Weight)
+
 \end{itemize}
 \subsubsection{UNF}
-\begin{table}[|l|]
-\begin{tabular}
+\begin{table}[H]
+\begin{tabular}{|l|}
 \hline
-\underline{Un-Normalised}
+\underline{Un-Normalised}\\
 \hline
-Client\\
-ClientID\\
-PharmacyNum\\
-Surname\\
-Firstline\\
-
+ClientID           \\
+PharmacyNum        \\
+Surname            \\
+Firstname          \\
+ClientPhoneNumber  \\
+ClientAddress      \\
+Postcode           \\
+PrescriptionCode   \\
+PharmacistID       \\
+PharmacistAdress   \\
+PharmacistEmail    \\
+PharmacyAddress    \\
+PharmacyPhoneNumber\\
+WareHouseAddress   \\
+OrderNum           \\
+OrderDate          \\
+size               \\
+ProductCode        \\
+QuantityOfMed      \\
+Weight             \\
+\hline
 \end{tabular}
 \end{table}
 
 \subsubsection{1NF to 3NF}
 \underline{1NF}
-\begin{table}[|l|l|]
-\begin{tabular}
-non-repeating & repeating \\
+\begin{table}[H]
+\begin{tabular}{|l|l|}
 \hline
-\textbf{PharmacyAddress}&\textbf{\\
-&\\
-&\\
-&\\
-&\\
-&\\
-&\\
+\textbf{non-repeating} & \textbf{repeating} \\
+\hline
+\underline{PharmacyNum}&\underline{ClientID}\\\hline
+ PharmacyAddress       & \emph{PharmacyNum} \\\hline
+ PharmacyPhoneNumber   & FirstName          \\\hline
+ WareHouseAddress      & Surname            \\\hline
+ OrderNum              & ClientPhoneNumber  \\\hline
+ PharmacistID          & ClientAddress      \\\hline
+ OrderDate             & PrescriptionCode   \\\hline
+ 							  & Size               \\\hline
+						     & QuantityOfMed      \\\hline
+                       & ProductWeight      \\\hline
+                       & ProductCode        \\
+\hline
+\end{tabular}
+\end{table}
+
+\underline{2NF}
+\begin{table}[H]
+\begin{tabular}{|l|}
+\hline
+\underline{ClientID}   \\\hline
+\underline{PharmacyNum}\\\hline
+PrescriptionCode       \\\hline
+\\\hline
+\underline{ClientID}   \\\hline
+FirstName              \\\hline
+Surname                \\\hline
+ClientPhoneNumber      \\\hline
+ClientAddress          \\\hline
+\\\hline
+\underline{PharmacyNum}\\\hline
+QuantityOfMed          \\\hline
+ProductWeight          \\\hline
+ProductCode            \\\hline
+PharmacistEmail        \\\hline
+PharmasistAddress      \\\hline
+Size                         \\
+\hline
+\end{tabular}
+\end{table}
+
+\underline{3NF}
+\begin{table}[H]
+\begin{tabular}{|l|}
+\hline
+\\
+\\
+\\
+\\
+\hline
 \end{tabular}
 \end{table}
 \section{Security and Integrity of the System and Data}
