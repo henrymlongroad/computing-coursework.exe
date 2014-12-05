@@ -98,17 +98,29 @@ ClientAddress      \\
 Postcode           \\
 PrescriptionCode   \\
 PharmacistID       \\
-PharmacistAdress   \\
+PharmacistTown     \\
+PharmacistStreet   \\
+PharmacistPostcode \\
 PharmacistEmail    \\
 PharmacyAddress    \\
 PharmacyPhoneNumber\\
-WareHouseAddress   \\
 OrderNum           \\
 OrderDate          \\
 size               \\
 ProductCode        \\
 QuantityOfMed      \\
 Weight             \\
+ProductName        \\
+Manufacturer       \\
+Price              \\
+Town               \\
+Postcode           \\
+StreetName         \\
+HouseNumber/Name   \\
+WareHouseNumber    \\
+WareHouseStreet    \\
+WareHouseTown\\
+WarehousePostcode\\
 \hline
 \end{tabular}
 \end{table}
@@ -120,60 +132,152 @@ Weight             \\
 \hline
 \textbf{non-repeating} & \textbf{repeating} \\
 \hline
-\underline{PharmacyNum}&\underline{ClientID}\\\hline
- PharmacyAddress       & \emph{PharmacyNum} \\\hline
- PharmacyPhoneNumber   & FirstName          \\\hline
- WareHouseAddress      & Surname            \\\hline
- OrderNum              & ClientPhoneNumber  \\\hline
- PharmacistID          & ClientAddress      \\\hline
- OrderDate             & PrescriptionCode   \\\hline
- 							  & Size               \\\hline
+\underline{PharmacyNum}&\underline{\underline{ClientID}}\\\hline
+ OrderDate             &\underline{ \underline{PharmacyNum}} \\\hline
+ OrderNum              & FirstName          \\\hline
+ Pharmacystreet        & Surname            \\\hline
+ PharmacyTown          & ClientPhoneNumber  \\\hline
+ PharmacyPostcode      & Town               \\\hline
+                       & Postcode           \\\hline
+							  & HouseNumber/Name   \\\hline
+							  & StreetName         \\\hline
+                       & ProductCode        \\\hline
 						     & QuantityOfMed      \\\hline
                        & ProductWeight      \\\hline
-                       & ProductCode        \\
-\hline
+                       & ProductName        \\\hline
+							  & PrescriptionCode   \\\hline
+  							  & Manufacturer       \\\hline
+							  & Price              \\\hline
+&size\\\hline
+&PharmacistName\\\hline
+&PharmacistNumber\\\hline
+&PharmacistTown     \\\hline
+&PharmacistStreet   \\\hline
+&PharmacistPostcode \\\hline
+&WarehouseNumber\\\hline
+&WarehouseTown \\\hline
+&WarehouseStreet\\\hline
+&WarehousePostcode\\\hline
 \end{tabular}
 \end{table}
 
 \underline{2NF}
 \begin{table}[H]
-\begin{tabular}{|l|}
+\begin{tabular}{|l|l|}
 \hline
-\underline{ClientID}   \\\hline
-\underline{PharmacyNum}\\\hline
-PrescriptionCode       \\\hline
-\\\hline
-\underline{ClientID}   \\\hline
-FirstName              \\\hline
-Surname                \\\hline
-ClientPhoneNumber      \\\hline
-ClientAddress          \\\hline
-\\\hline
-\underline{PharmacyNum}\\\hline
-QuantityOfMed          \\\hline
-ProductWeight          \\\hline
-ProductCode            \\\hline
-PharmacistEmail        \\\hline
-PharmasistAddress      \\\hline
-Size                         \\
+\textbf{repeating} & \textbf{Non repeating}\\
 \hline
+\underline{\underline{ClientID}}     &\underline{PharmacyNum} \\\hline
+\underline{\underline{PharmacyNum}}  & OrderDate \\\hline
+PrescriptionCode                     & Size\\\hline
+                                     & OrderNum\\\hline
+\underline{ClientID}                 & PharmacyStreet\\\hline
+FirstName                            & PharmacyTown\\\hline
+Surname                              & PharmacyPostcode\\\hline
+ClientPhoneNumber                    & PharmacyPhoneNumber \\\hline
+HouseNumber/Name         & \\\hline
+Town                     & \\\hline
+Postcode                 & \\\hline
+StreetName               & \\\hline
+ & \\\hline
+\underline{PharmacyNum}  &\\\hline
+PharmacistNumber         &\\\hline
+PharmacistName           &\\\hline
+PharmacistEmail          &\\\hline
+PharmacistTown           &\\\hline
+PharmacistStreet         &\\\hline
+PharmacistPostcode       &\\\hline
+QuantityOfMed            &\\\hline
+ProductName       & \\\hline
+ProductWeight     & \\\hline
+ProductCode       & \\\hline
+Manufacturer      & \\\hline
+Price             & \\\hline
+WarehouseTown &\\\hline
+WarehouseStreet &\\\hline
+WarehousePostcode&\\\hline
 \end{tabular}
 \end{table}
 
 \underline{3NF}
 \begin{table}[H]
-\begin{tabular}{|l|}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\\
-\\
-\\
-\\
+\begin{tabular}{l}
+\underline{ClientID}     \\
+FirstName                \\
+Surname                  \\
+ClientPhoneNumber        \\
+HouseNumber/Name         \\
+Town                     \\
+Postcode                 \\
+StreetName               \\
+\end{tabular}&
+\begin{tabular}{l}
+\underline{ProductID}\\
+ ProductName        \\
+ ProductWeight      \\
+ ProductCode        \\
+ Manufacturer       \\
+ Price              \\
+\end{tabular}&
+\begin{tabular}{l}
+\underline{OrderNumber}\\
+\emph{WareHouseNumber}\\
+\emph{ProductID}\\
+ OrderDate\\
+ Size\\
+\end{tabular} &
+\begin{tabular}{l}
+\underline{PharmacistID} \\
+PharmacistNumber         \\
+PharmacistName           \\
+PharmacistEmail          \\
+PharmacistTown           \\
+PharmacistStreet         \\
+PharmacistPostcode       \\
+\end{tabular} \\
+\hline
+\begin{tabular}{l}
+\underline{PrescriptionCode} \\
+\emph{PharmacistID} \\
+\emph{clientID}\\
+ QuantityOfMed            \\
+\end{tabular}&
+\begin{tabular}{l}
+\underline{WareHouseNumber}\\
+WarehouseTown \\
+WarehouseStreet \\
+WarehousePostcode\\
+\end{tabular}&
+\begin{tabular}{l}
+\underline{PrescritionProduct}\\
+\emph{ProductID}\\
+\emph{PrescritionCode}\\
+\end{tabular}&
+\begin{tabular}{l}
+\underline{ProductWareHouse}\\
+\emph{ProductID}\\
+\emph{WareHouseNumber}\\
+\end{tabular}\\\hline
+\begin{tabular}{l}
+\underline{OrderProduct}\\
+\emph{ProductWareHouse}\\
+\emph{Order}\\
+\end{tabular}&
+\begin{tabular}{l}
+\end{tabular}&
+\begin{tabular}{l}
+\end{tabular}&
+\begin{tabular}{l}
+\end{tabular}\\
 \hline
 \end{tabular}
 \end{table}
 \section{Security and Integrity of the System and Data}
 
 \subsection{Security and Integrity of Data}
+
 
 \subsection{System Security}
 
