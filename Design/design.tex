@@ -71,16 +71,24 @@ enough item in stock False & order more item & update stock\\
 \subsection{Normalisation}
 
 \subsubsection{ER Diagrams}
-
+\begin{figure}[H]
+\centering
+\includegraphics[trim = 0mm 100mm 0mm 0mm, clip, width=140mm, scale=2]{ERdiagram.JPG}
+\caption{ERdiagram \label{overflow}}
+\end{figure}
 \subsubsection{Entity Descriptions}
 \begin{itemize}
-\item Client(\underline{clientID},\emph{PharmacyNum}, surname, FirstName, PhoneNumber, Address,Postcode, PrescriptionCode)
-\item Pharmacy(\underline{PharmacyNum},PharmacyAddress,PharmacyPhoneNumber)
-\item Pharmacist(\underline{PharamacistID},\emph{PharmacyNum},Surname,
-FirstName,PhoneNumber,Address,Email)
-\item Warehouse(\underline{WareHouseNum},\emph{PharmacyAddress},WareHouseAddress)
-\item Order(\underline{OrderNum},\emph{WareHouseNum},\emph{Pharmacyaddress},OrderDate,size)
-\item product(\underline{ProductCode},\emph{OrderNum},QuantityOfMed,Weight)
+\item Client(\underline{clientID}, FirstName, surname, ClientPhoneNumber, Town, streetName,HouseNumber/name,Postcode)
+\item Product(\underline{ProductID},ProductName, ProductWeight, ProductCode, Manufacturer, Price)
+\item Pharmacist(\underline{PharamacistID}, PharmacistNum, Pharmacistname,
+PharmacistEmail, PharmacistTown, PharmacistStreet, PharmacistPostcode)
+\item Warehouse(\underline{WareHouseNum}, WarehouseTown, WarehouseStreet, WarehousePostcode)
+\item PrescriptionCode(\underline{PrescriptionCode}, \emph{PharmacistID}, \emph{ClientID}, QuantityOfMed)
+\item Order(\underline{OrderNum}, \emph{WareHouseNumber}, \emph{ProductID}, OrderDate, size)
+\item Product on prescription(\underline{PrescritionProduct}, \emph{ProductID}, \emph{PrescritionCode})
+\item product delivered from warehouse(\underline{ProductWareHouse}, \emph{ProductID}, \emph{WareHouseNumber})
+\item Product ordered (\underline{OrderProduct}, \emph{ProductWareHouse}, \emph{Order})
+
 
 \end{itemize}
 \subsubsection{UNF}
